@@ -6,7 +6,7 @@ import createCheckoutSession from '@salesforce/apex/OpportunityPaymentController
 const STRIPE_JS_URL = 'https://js.stripe.com/v3/';
 // Publishable key is safe to expose client-side. Move this to Custom Metadata
 // rather than hardcoding, so it can differ across sandboxes/production.
-const STRIPE_PUBLISHABLE_KEY = 'pk_test_51O2BRnHDzcoxHmd1LDXdRNYttnY3OjOWq4qS4VHmY9LHVvup6fb5tx7hHUWr9nWkf1Ps8d6eDvJabDiQtKxM3SkT00gCILUrLM';
+const STRIPE_PUBLISHABLE_KEY = 'PUBLISHKEY';
 
 export default class OppProductPayment extends LightningElement {
     @api recordId; // Opportunity Id - auto-populated when placed on the record page
